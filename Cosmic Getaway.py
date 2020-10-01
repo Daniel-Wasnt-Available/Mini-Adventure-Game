@@ -1,3 +1,28 @@
+#-----------------------------------------------------------------------------
+# Name:        Cosmic Getaway.py
+# Purpose:     Mini Adventure Game
+#
+# Author:      Daniel W
+# Created:     23-Sept-2020
+# Updated:     25-Sept-2020
+#-----------------------------------------------------------------------------
+#I think this project deserves a 4+ because ...
+#
+#Features Added:
+#  Firstly the game came out 4 times better than I thought I was capable of making
+#  Did some research on how to add a typing affect (I only added this for the story line section because it took a lot more code)
+#  A really long time editing ascii art, I removed symbols that broke the code, like x's
+#  I also had some wierd problems with printing ascii, some lines didn't match, if you look are some of the ascii in my code
+#  they will look strange and out of place but I had to do it so in the shell it prints normally.
+#  I spent a lot of time after class to work on this (Not like homework tho because I really enjoyed it)
+#  Tried adding something unique, in this game at the start one of the rules was, if you get abducted, you dont know anything.
+#  So I added some code that if the player lost all their lives and get abducted they have a chance to get back in the game
+#  by telling the aliens, they don't know anything.
+#  When the characters chat in ascii they will recall what the player enterd as their name.
+#  for example in the first alien encounter the player name is known as a rare species, also your friend will blame you for forgetting gas...
+#  Depending on wheater you get the answer right or not the output/reaction of the aliens and stuff will change
+#  Incorporated a no so helpful 911 operator who is on the phone with you to add some humour and make things intresting.
+#-----------------------------------------------------------------------------
 lives = 3
 import time
 
