@@ -9,7 +9,7 @@
 #I think this project deserves a 4+ because ...
 #
 #Features Added:
-#  Firstly the game came out 4 times better than I thought I was capable of making
+#  Firstly the game came out 4 times better than I thought I was capable of making (Yay!)
 #  Did some research on how to add a typing affect (I only added this for the story line section because it took a lot more code)
 #  A really long time editing ascii art, I removed symbols that broke the code, like x's
 #  I also had some wierd problems with printing ascii, some lines didn't match, if you look are some of the ascii in my code
@@ -27,6 +27,7 @@ lives = 3
 import time
 
 def loadingScreen(): #Yes...another student who has also added in a loading screen. But just one time for the start o.O
+    '''Add function headers describing what it does'''
     import random
     import time
 
@@ -37,18 +38,19 @@ def loadingScreen(): #Yes...another student who has also added in a loading scre
         loading += random.randint (4,11)
         time.sleep(0.2)
     print ('Game Loaded...')
-    time.sleep(5)
+    #time.sleep(5)
     print("Just kidding, you need 1% more... ")
-    time.sleep(3)
+    #time.sleep(3)
     print("100%...")
-    time.sleep(3)
+    #time.sleep(3)
     print("101%")
-    time.sleep(3)
+    #time.sleep(3)
     print("There we go")
     return
 
     
 def welcomeScreen():
+    '''Add function headers describing what it does'''
     import time
     if lives == 3:
         time.sleep(6)
@@ -75,6 +77,7 @@ def welcomeScreen():
 
 
 def firstRiddle():
+    '''Add function headers describing what it does'''
     print("Here is your first riddle")
     print('''
 George Smith was murdered on Sunday evening. There were 5 other people in his house: Mr. Smith's wife, his personal cook, a butler, a housemaid, and a gardener. They all told Detective Stevens what they were doing that evening:
@@ -90,6 +93,7 @@ Choices: Mrs.Smith, The Cook, The Butler, The Housemaid, or The Gardener?
 ''')
     
 def secondRiddle():
+    '''Add function headers describing what it does'''
     print("\r\n")
     print("Great to hear from you!")
     print("Here is your second riddle, you got this!")
@@ -106,6 +110,7 @@ def thirdRiddle():
     print("hint: look in the sentence")
     
 def fourthRiddle():
+    '''Add function headers describing what it does'''
     print("\r\n")
     print("WOW! how are you still going? I'm not that I don't want you to be alive but damn!")
     time.sleep(3)
@@ -148,12 +153,12 @@ while play:
         print("\r\n")
     #This story line section use to be a function
     #but I had a lot of trouble putting it in the function, like indent errors, name errors, so I just put it in the main code
-    import sys
+    import sys #imports should always be at the very top of the program
     from time import sleep
     print("     =========================Story Line=========================")
     lineone = "Date: September 20, 2019"
 
-    for char in lineone:
+    for char in lineone: #You do this more than once, better form to make it a function (it would have saved a ton of typing!)
         sleep(0.2)
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -264,7 +269,7 @@ while play:
     secondRiddle()
     print ("What is your answer?(please use all lowercase, without commas, and add spaces)")
     answertwo = input(" p.s. we aren't in first grade...spelling counts. -->")
-    if answertwo == ("yesterday today tomorrow"):
+    if answertwo == ("yesterday today tomorrow"): #check out the upper command, would make your check case insensitive :)
         print("\r\n")
         print("Fantastic! What's your IQ? 200?")
         time.sleep(3)
@@ -363,7 +368,7 @@ while play:
 
     #third riddle
     thirdRiddle()
-    answerthree = input("Alright buddy, what's your gusse? -->")
+    answerthree = input("Alright buddy, what's your guess? -->")
     if answerthree == ("m") or answerthree == ("M"):
         print("You are on a roll!")
         time.sleep(1.5)
@@ -709,3 +714,7 @@ MM88MMM 88,dPPYba,  ,adPPYYba, 8b,dPPYba,  88   ,d8 8b       d8  ,adPPYba,  88  
                     play = False
                 else:
                     play = False
+#Your program was awesome to play through!  Thanks for the laugh :)
+#KA - 9.8/10 --> I really wanted to give you a 10, but you needed to be using a function for all that repeated typing code
+#C - 8/10 -> All of your functions need full headers
+#T - 10/10 -> Good job on the flow chart.  
